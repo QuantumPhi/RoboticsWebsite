@@ -1,0 +1,13 @@
+include layout.jade
+
+block canvas
+    script(type='text/javascript').
+        jquery(document).ready(function($) {
+            var options = {
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$,
+                    $ChanceToShow: 2
+                }
+            }
+            var slider = new $JssorSlider$('canvas', options)
+        })

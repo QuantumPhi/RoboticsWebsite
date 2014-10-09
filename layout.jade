@@ -3,20 +3,7 @@ html(lang='en')
 head
     link(rel='stylesheet', href='style.css')
     title='Saints Robotics | FRC Team 1899'
-    script(src='//code.jquery.com/jquery-1.11.0.min.js')
-    script(src='js/jssor.slider.mini.js')
 body
     block canvas
     block info
     block footer
-
-    script(type='text/javascript').
-        jquery(document).ready(function($) {
-            var options = {
-                $BulletNavigatorOptions: {
-                    $Class: $JssorBulletNavigator$,
-                    $ChanceToShow: 2
-                }
-            }
-            var slider = new $JssorSlider$('canvas', options)
-        })

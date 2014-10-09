@@ -1,20 +1,28 @@
 ---
 ---
 
-@import url('http://fonts.googleapis.com/css?family=Oxygen');
+@import url('http://fonts.googleapis.com/css?family=Varela+Round');
 
-html
+html, body
 {
-    font-family: 'Oxygen';
+    font-family: 'Varela Round';
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
 #info
 {
-    color: #3498db;
     font-size: 20px;
+    color: #e0eced;
+
+    background: #3498db;
+
+    position: relative;
+    overflow: hidden;
+    height: 75%;
+    width: 100%;
 }

@@ -14,15 +14,42 @@ html, body
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+#wrap
+{
+    z-index: -1;
+    position: relative;
+    height: 92.5%;
+    width: 100%;
+}
+
+#canvas
+{
+    @extend #wrap;
+    position: fixed;
+}
+
 #info
 {
+    @extend #wrap;
     font-size: 20px;
     color: #e0eced;
 
     background: #3bafe9;
 
+    z-index: 0;
+}
+
+ul#imageWrap
+{
     position: relative;
     overflow: hidden;
-    height: 75%;
-    width: 100%;
+
+    padding: 0;
+}
+
+ul#imageWrap li
+{
+    float: left;
+
+    list-style: none;
 }

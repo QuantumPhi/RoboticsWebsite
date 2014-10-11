@@ -1,10 +1,15 @@
 include layout.jade
 
 block canvas
-    #canvas
-        img(src='imgs/image1.jpg')
-        img(src='imgs/image2.jpg')
-        img(src='imgs/image3.jpg')
+    #wrap
+        #canvas
+            ul#imageWrap
+                li
+                    img(src='imgs/cat1.jpg')
+                li
+                    img(src='imgs/cat2.jpg')
+                li
+                    img(src='imgs/cat3.jpg')
 
 block info
     #info='ABOUT US'

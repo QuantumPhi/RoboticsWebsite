@@ -4,6 +4,14 @@ head
     link(rel='stylesheet', href='style.css')
     script(src='//code.jquery.com/jquery-1.11.0.min.js')
     title='Saints Robotics | FRC Team 1899'
+
+    script(type='text/javascript').
+        $(document).ready(function() {
+            var canvas = $('div#canvas')
+            var img = $('img#logo')
+
+            img.height(canvas.height())
+        });
 body
     block canvas
     block info

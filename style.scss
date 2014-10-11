@@ -26,6 +26,8 @@ html, body
 {
     @extend #wrap;
     position: fixed;
+
+    background: #454448;
 }
 
 #info
@@ -52,4 +54,12 @@ ul#imageWrap li
     float: left;
 
     list-style: none;
+}
+
+img#logo
+{
+    display:block;
+    height: auto;
+    width: auto;
+    margin: auto;
 }

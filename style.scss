@@ -38,22 +38,12 @@ html, body
 
     background: #3bafe9;
 
+    height: 100%;
     z-index: 0;
-}
 
-ul#imageWrap
-{
-    position: relative;
-    overflow: hidden;
-
-    padding: 0;
-}
-
-ul#imageWrap li
-{
-    float: left;
-
-    list-style: none;
+    p { position: relative; }
+    p#title { @extend p; font-size: 40px; }
+    p#content { @extend p; font-size: 30px; }
 }
 
 img#logo
